@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="orbit.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <span>Orbit</span><span> CRM</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+          <a href="#">Главная</a>
+          <a href="client.html">Клиенты</a>
+          <a href="registr.html">Регистрация</a>
+          <a href="voyti.html">Войти</a>
+        </nav>
+      </header>
+    
+      <script src="orbit.js">
+      </script>
+    
+    <section class="intro">
+        <h1><span class="purple">Orbit</span> <span class="white">CRM</span></h1>
+        <div class="buttons">
+          <a href="#service" class="btn-service">Сервис</a>
+          <a href="#about" class="btn-about">О нас</a>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2>Услуги в Orbit CRM</h2>
+          <p>
+            Ознакомьтесь с индивидуальными решениями Orbit и получите квалифицированную поддержку.
+            Благодаря нашему специализированному подходу к CRM-системам вы сможете без особых усилий
+            улучшить свои бизнес-операции.
+          </p>
+        </div>
+      </section>
+
+      <section class="services-grid">
+        <div class="container">
+         
+          <div class="service-item">
+            <img src="фото/инфо1.jpg" alt="Индивидуальные решения">
+            <div class="text">
+              <h3>Индивидуальные решения</h3>
+              <p>
+                Преобразуйте свой бизнес с помощью специализированных CRM-решений Orbit. Наши опытные консультанты тесно сотрудничают с вами, чтобы понять ваши уникальные задачи и целевые установки. Благодаря персонализированной оценке мы разрабатываем индивидуальные системы, которые соответствуют вашим операционным потребностям и идеально подходят для вашей бизнес-модели. Испытайте индивидуальный подход к CRM, который расширит ваши возможности по управлению клиентами.
+              </p>
+            </div>
+          </div>
+      
+          
+          <div class="service-item reverse">
+            <div class="text">
+              <h3>Системная интеграция</h3>
+              <p>
+                Откройте для себя простоту услуг системной интеграции Orbit. Наша команда специализируется на объединении наших CRM-решений с вашими существующими платформами, обеспечивая плавный переход и сводя к минимуму сбои в работе. Используя передовые технологии, мы улучшаем ваш поток данных и операционную эффективность, предоставляя вам единую систему, которая поддерживает рост вашего бизнеса.
+              </p>
+            </div>
+            <img src="фото/инфо2.jpg" alt="Системная интеграция">
+          </div>
+      
+          
+          <div class="service-item">
+            <img src="фото/инфо3.jpg" alt="Поддержка">
+            <div class="text">
+              <h3>Поддержка</h3>
+              <p>
+                В Orbit вы можете рассчитывать на всестороннюю постоянную поддержку, соответствующую вашим потребностям. Наша специализированная служба поддержки всегда готова помочь вам с любыми запросами или техническими проблемами. Начиная с регулярных обновлений системы и заканчивая устранением неполадок, мы заботимся о том, чтобы ваше CRM—решение продолжало работать наилучшим образом, позволяя вам сосредоточиться на самом важном - построении прочных отношений с вашими клиентами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <div class="about-item">
+            <h3>О нас</h3>
+            <p>
+              В Orbit CRM мы используем возможности инновационного дизайна для создания комплексных информационных систем, предназначенных для управления взаимоотношениями с клиентами. Мы сосредоточены на оптимизации анализа данных и повышении операционной эффективности оптовых компаний, гарантируя, что каждое предлагаемое нами решение будет практичным и эффективным. Стремясь к совершенству, Orbit CRM разрабатывает системы, которые позволяют организациям легко управлять взаимодействием с клиентами, повышая производительность и способствуя росту.
+            </p>
+          </div>
+          <div class="about-item">
+            <h3>Наша миссия</h3>
+            <p>
+              В Orbit CRM мы используем возможности инновационного дизайна для создания комплексных информационных систем, предназначенных для управления взаимоотношениями с клиентами. Мы сосредоточены на оптимизации анализа данных и повышении операционной эффективности оптовых компаний, гарантируя, что каждое предлагаемое нами решение будет практичным и эффективным. Стремясь к совершенству, Orbit CRM разрабатывает системы, которые позволяют организациям легко управлять взаимодействием с клиентами, повышая производительность и способствуя росту.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <div class="animated-support-widget" onclick="toggleSupportForm()">
+        <i class="fas fa-comment-dots"></i> 
+      </div>
+    
+      
+      <div class="support-form" id="supportForm">
+        <div class="support-form-header">
+          Поддержка <span class="support-form-close" onclick="toggleSupportForm()">&times;</span>
+        </div>
+        <div class="support-form-content">
+          <input type="text" class="support-form-input" placeholder="Ваше имя" id="name" required>
+          <input type="email" class="support-form-input" placeholder="Ваш email" id="email" required>
+          <textarea class="support-form-textarea" placeholder="Ваше сообщение" id="message" required></textarea>
+          <button class="support-form-button" onclick="submitSupportForm()">Отправить</button>
+        </div>
+        <div id="support-message"></div> 
+      </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h2><span>Orbit</span> CRM</h2>
+            <ul>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Регистрация</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Услуги</a></li>
+            </ul>
+          </div>
+          <div class="footer-info">
+            <div class="footer-column">
+              <h3>Email</h3>
+              <p><a href="mailto:info@youraddress.com">info@youraddress.com</a></p>
+            </div>
+            <div class="footer-column">
+              <h3>Телефон</h3>
+              <p>+8 (977)-145-61-77</p>
+            </div>
+            <div class="footer-column">
+              <h3>Адрес</h3>
+              <p>Россия, Мос обл.<br>г. Реутов</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">© All Rights Reserved. OrbitCRM 2025</div>
+      </footer>
+    
+</body>
+</html>

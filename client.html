@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <span>Orbit</span><span> CRM</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+          <a href="orbit.html">Главная</a>
+          <a href="#" id="str">Клиенты</a>
+          <a href="registr.html">Регистрация</a>
+          <a href="voyti.html">Войти</a>
+        </nav>
+      </header>
+
+      <script src="client.js">
+      </script>
+
+      <section class="clients-section">
+        <h2>Список клиентов</h2>
+        <div class="table-wrapper">
+          <table class="client-table">
+            <thead>
+              <tr>
+                <th>ФИО</th>
+                <th>Дата рег.</th>
+                <th>Регион</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="updateContact('sid')">
+                <td>Иван Петрович Сидоров</td>
+                <td>09.04.2025</td>
+                <td>Москва</td>
+              </tr>
+              <tr onclick="updateContact('kuz')">
+                <td>Елена Сергеевна Кузнецова</td>
+                <td>08.04.2025</td>
+                <td>Санкт-Петербург</td>
+              </tr>
+              <tr onclick="updateContact('sok')">
+                <td>Дмитрий Александрович Соколов</td>
+                <td>01.04.2025</td>
+                <td>Казань</td>
+              </tr>
+              <tr onclick="updateContact('smi')">
+                <td>Мария Васильевна Смирнова</td>
+                <td>01.04.2025</td>
+                <td>Набережные Челны</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <h2 class="contact-title">Связаться</h2>
+        <div class="contact-card">
+          <h3 id="contact-name">Иван Петрович Сидоров</h3>
+          <div class="contact-info">
+            <div>
+              <h4>Телефон</h4>
+              <p id="contact-phone">(495) 80-90-90</p>
+            </div>
+            <div>
+              <h4>Почта</h4>
+              <p><a href="mailto:svel@mail.ru" id="contact-email">svel@mail.ru</a></p>
+            </div>
+            <div>
+              <h4>Адрес</h4>
+              <p id="contact-address">г. Москва<br>ул. Пушкина<br>д.30<br>119019</p>
+            </div>
+            <div>
+              <h4>Адрес доставки</h4>
+              <p id="contact-shipping">г. Москва<br>ул. Пушкина<br>д.30<br>119019</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+     
+      <div class="animated-support-widget" onclick="toggleSupportForm()">
+        <i class="fas fa-comment-dots"></i> 
+      </div>
+    
+     
+      <div class="support-form" id="supportForm">
+        <div class="support-form-header">
+          Поддержка <span class="support-form-close" onclick="toggleSupportForm()">&times;</span>
+        </div>
+        <div class="support-form-content">
+          <input type="text" class="support-form-input" placeholder="Ваше имя" id="name" required>
+          <input type="email" class="support-form-input" placeholder="Ваш email" id="email" required>
+          <textarea class="support-form-textarea" placeholder="Ваше сообщение" id="message" required></textarea>
+          <button class="support-form-button" onclick="submitSupportForm()">Отправить</button>
+        </div>
+        <div id="support-message"></div> >
+      </div>
+    
+
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2><span>Orbit</span> CRM</h2>
+        <ul>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Регистрация</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <div class="footer-column">
+          <h3>Email</h3>
+          <p><a href="mailto:info@youraddress.com">info@youraddress.com</a></p>
+        </div>
+        <div class="footer-column">
+          <h3>Телефон</h3>
+          <p>+8 (977)-145-61-77</p>
+        </div>
+        <div class="footer-column">
+          <h3>Адрес</h3>
+          <p>Россия, Мос обл.<br>г. Реутов</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© All Rights Reserved. OrbitCRM 2025</div>
+  </footer>
+      
+    
+</body>
+</html>
